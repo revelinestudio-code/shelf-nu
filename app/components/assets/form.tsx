@@ -255,7 +255,7 @@ export const AssetForm = ({
           <p className="mt-1 text-sm text-gray-600"></p>
         </FormRow>
 
-        <FormRow rowLabel={"Main image"} className="pt-[10px]">
+        {/* <FormRow rowLabel={"Main image"} className="pt-[10px]">
           <div className="flex items-center gap-2">
             {id && thumbnailImage && mainImageExpiration ? (
               <AssetImage
@@ -299,7 +299,7 @@ export const AssetForm = ({
               </p>
             </div>
           </div>
-        </FormRow>
+        </FormRow> */}
 
         <div>
           <FormRow

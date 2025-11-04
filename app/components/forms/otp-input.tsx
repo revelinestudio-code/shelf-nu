@@ -71,7 +71,7 @@ function ShelfOTP({ error }: { error?: string }) {
     <div>
       <label className={tw("relative flex flex-col")} htmlFor={"otp"}>
         <InnerLabel required>Code</InnerLabel>
-        <InputOTP maxLength={6} name="otp" required>
+        <InputOTP maxLength={8} name="otp" required>
           <InputOTPGroup className="w-full">
             <InputOTPSlot index={0} />
             <InputOTPSlot index={1} />
@@ -79,6 +79,8 @@ function ShelfOTP({ error }: { error?: string }) {
             <InputOTPSlot index={3} />
             <InputOTPSlot index={4} />
             <InputOTPSlot index={5} />
+            <InputOTPSlot index={6} />
+            <InputOTPSlot index={7} />
           </InputOTPGroup>
         </InputOTP>
       </label>

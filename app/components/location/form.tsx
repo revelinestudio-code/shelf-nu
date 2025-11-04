@@ -85,7 +85,8 @@ export const LocationForm = ({
             required={zodFieldIsRequired(NewLocationFormSchema.shape.name)}
           />
         </FormRow>
-
+        {/* TEMPORARY FIX: Commented out file upload to resolve ERR_ASSERTION bug with empty file fields. */}
+        {/*
         <FormRow rowLabel={"Main image"}>
           <div>
             <p className="hidden lg:block">
@@ -108,7 +109,7 @@ export const LocationForm = ({
             </p>
           </div>
         </FormRow>
-
+*/}
         <FormRow
           rowLabel={"Address"}
           subHeading={
