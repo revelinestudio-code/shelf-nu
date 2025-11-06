@@ -42,7 +42,7 @@ const ForgotPasswordSchema = z.object({
 
 const OtpSchema = z
   .object({
-    otp: z.string().min(6, "OTP is required."),
+    otp: z.string().min(8, "OTP is required."),
     email: z.string().transform((email) => email.toLowerCase()),
     password: z.string().min(8, "Password is too short. Minimum 8 characters."),
     confirmPassword: z
@@ -227,7 +227,7 @@ export default function ForgotPassword() {
         ) : (
           <>
             <p className="mb-2">
-              We've sent a 6-digit code to{" "}
+              We've sent a 8-digit code to{" "}
               <span className="font-semibold">{email}</span>.
             </p>
             <ol className="mb-4 list-inside list-decimal">
